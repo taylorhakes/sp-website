@@ -28,7 +28,21 @@
   </head>
 
   <body>
-
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+	</script>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -59,7 +73,14 @@
           <p><a class="btn btn-primary btn-large" style="background-color:#54a4d9;padding:14px 24px;font-size:24px;" href="https://chrome.google.com/webstore/detail/nphfkpgklibhnhgegdblhnhicgfginnj">Install now &raquo;</a></p>
       	</div>
       </div>
-      
+      <div id="social_widgets" style="padding-top:15px;padding-bottom:30px	;text-align: center;border-top: 1px solid white;border-bottom: 1px solid #DDD;">
+      	<div class="fb-like" data-href="http://www.swiftpreview.com" data-send="false" data-layout="button_count" data-width="10" data-show-faces="false" style="display:inline-block;vertical-align:top;"></div>&nbsp;&nbsp;
+      	<a href="https://twitter.com/SwiftPreview" class="twitter-follow-button" data-show-count="false">Follow @SwiftPreview</a>&nbsp;
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Preview any link on the internet in a customizable tooltip. Great for browsing Twitter and Google." data-via="SwiftPreview">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<g:plusone size="medium" annotation="inline" width="120"></g:plusone>
+			</div>
       <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
